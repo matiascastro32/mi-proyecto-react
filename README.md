@@ -223,38 +223,17 @@ echo "Copiado build/ a cordova-app/www/"
 
 Hazlo ejecutable: `chmod +x scripts/copy-build-to-cordova.sh`
 
----
-## 11) Pruebas y evidencia para la entrega
-Recomiendo capturar las siguientes pruebas para adjuntar en la plataforma de evaluación:
-- Pantalla de Netlify con la URL desplegada.
-- Pantalla de Firestore mostrando documentos guardados (después de enviar formulario).
-- Video demo corto (3-5 min) mostrando: listar productos, agregar al carrito, enviar formulario, abrir Firestore y ver el documento, instalar APK en dispositivo (si aplica).
-- Archivo ZIP final entregado (sin node_modules).
+
+
 
 ---
-## 12) Checklist final de entrega
-- [ ] ZIP del proyecto (sin node_modules) subido a la plataforma
-- [ ] Repositorio en GitHub: `https://github.com/matiascastro32/mi-proyecto-react`
-- [ ] URL Netlify funcionando
-- [ ] Video de presentación subido (link)
-- [ ] APK firmado (si aplica) o evidencia de build/instalación (si aplica)
-
----
-## 13) Problemas comunes & soluciones rápidas
+## 11) Problemas comunes & soluciones rápidas
 - **Errores de Firebase:** revisa reglas de Firestore/Storage y permisos. Revisar consola del navegador para errores CORS o claves inválidas.
 - **Cordova/Gradle issues:** abre el proyecto en Android Studio y deja que descargue dependencias; si falla, actualiza Android SDK / build-tools.
 - **apksigner no encontrado:** agrega ruta del build-tools al PATH o usa Android Studio para firmar.
 
 ---
-## 14) Cómo abrir el proyecto en Visual Studio Code (paso a paso)
-1. Descarga y descomprime el ZIP `proyecto-final.zip`.
-2. Abre VSCode → File → Open Folder → selecciona la carpeta `proyecto-final`.
-3. Abre terminal integrada (Terminal → New Terminal).
-4. Ejecuta:
-```bash
-npm install
-npm start
-```
+
 5. Para crear build y preparar APK:
 ```bash
 npm run build
