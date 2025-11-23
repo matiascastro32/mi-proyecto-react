@@ -258,11 +258,4 @@ npm start
 5. Para crear build y preparar APK:
 ```bash
 npm run build
-# luego copia build a cordova-app/www y sigue la guía de Cordova del punto 9
-```
 
----
-## 15) Contacto / notas finales
-Si quieres que yo actualice el README con comandos exactos adaptados a Windows o Linux, o que incluya el script `copy-build-to-cordova.sh` listo y que regenere el ZIP con todo actualizado, dime **"Regenera ZIP con README completo y script"** y lo hago ahora mismo.
-
-¡Listo! Este README ahora contiene las instrucciones completas que exige la pauta y los pasos necesarios para Cordova/APK.
